@@ -40,10 +40,15 @@ MODEL PHOTOS
 - The whole product must stay clearly visible. Natural, relaxed, confident poses, not stiff.
 - I will tell you the pose for each image.
 
-GHOST MANNEQUIN PHOTOS (invisible mannequin)
-- Make a "ghost mannequin" photo: the garment looks worn on an invisible body, full and 3D, floating in the frame.
-- NO visible mannequin: no plastic or fabric mannequin, no neck block, no stand, no pole, no base, no hanger, no hands, no head, no body. Nothing but the garment.
-- Show the inside of the neck/collar (the back inside of the garment) as in a real ghost mannequin photo, with a natural shape and natural folds. The sleeves and body keep a natural worn shape, not flat.
+GHOST MANNEQUIN PHOTOS (professional invisible mannequin, like an official brand website photo)
+- The garment looks worn by an invisible body, floating, perfectly front-facing and symmetrical.
+- NO visible mannequin of any kind: no plastic or fabric mannequin, no neck block, no stand, no pole, no base, no hanger, no hands, no head, no body. Nothing but the garment.
+- SLEEVES: both sleeves hang straight down along the sides of the body, slightly away from it (about 10 to 15 degrees), parallel and symmetrical. Same length, same angle, cuffs at the same height. Not bent, not raised, not spread wide, not crossed.
+- SHOULDERS: a natural, smooth, sloped shoulder line, symmetrical left and right. No boxy or inflated shoulders.
+- BODY: filled with natural volume as on a real torso, straight hem, the zip or button placket straight down the exact middle. Not flat like a lay-flat photo and not puffed up like a balloon.
+- COLLAR: standing naturally, with the inside back of the collar and the inside label visible.
+- FABRIC: only the small, realistic folds, quilting and seams of the real product. Smooth, clean, ironed look. No random wrinkles.
+- CAMERA AND LIGHT: straight-on, camera at chest height, no perspective distortion, soft even studio light with a very soft subtle shadow under the garment. Sharp, high detail.
 - I will send a front photo and a back photo of the product. Make a FRONT image from the front photo and a BACK image from the back photo. Keep the same size, shape and light in both.
 ```
 
@@ -82,14 +87,21 @@ Framing lines:
 
 ### PROMPT C1: ghost mannequin FRONT (attach the front photo)
 ```
-Product front photo attached. Ghost mannequin FRONT view (invisible mannequin), following the project rules. The garment looks worn on an invisible body, full and 3D, floating, with the inside of the collar visible. NO visible mannequin, neck block, stand, hanger, head or hands. 1200x1200, background #DCDCDC, wide shot with a clear empty grey margin around the garment (at least 12% on every side), centered, never close to the edges. Do not change any logo or detail. One image only.
+Product front photo attached. Professional ghost mannequin FRONT view (invisible mannequin, like an official brand website photo), following the project rules. The garment is worn by an invisible body, full and natural, perfectly straight-on and symmetrical. Both sleeves hang straight down beside the body, slightly away from it, parallel and the same on both sides, with the cuffs at the same height. Natural sloped shoulders, the inside of the collar visible. NO visible mannequin, neck block, stand, hanger, head or hands. 1200x1200, background #DCDCDC, wide shot with a clear empty grey margin around the garment (at least 12% on every side), centered, never close to the edges. Do not change any logo or detail. One image only.
 ```
 
 ### PROMPT C2: ghost mannequin BACK (same chat, attach the back photo)
 ```
-Back photo attached. Ghost mannequin BACK view of the same garment, following the project rules. Same size, shape, framing (wide shot, clear grey margin on every side, centered) and light as the front image. NO visible mannequin of any kind. 1200x1200, background #DCDCDC. Show the back exactly as in the back photo. Do not change any logo or detail. One image only.
+Back photo attached. Professional ghost mannequin BACK view of the same garment, following the project rules. Same size, shape, framing (wide shot, clear grey margin on every side, centered), sleeve position (hanging straight down beside the body, symmetrical) and light as the front image. Straight-on and symmetrical, the inside of the collar visible. NO visible mannequin of any kind. 1200x1200, background #DCDCDC. Show the back exactly as in the back photo. Do not change any logo or detail. One image only.
 ```
 If a plastic mannequin still appears, send this one line: "Remove the mannequin completely. Ghost mannequin only: the garment alone, floating."
+
+### Style reference (optional)
+Optional, for the best result: attach ONE example photo of a professional ghost mannequin (from a brand website) and add this line to Prompt C1 or C2:
+"Match the style of the attached style reference only: the sleeve position, the symmetry, the shape and the light. Take the product, its color and every detail ONLY from the product photo."
+Use the example only as a private reference. Never upload it to the shop.
+
+If the sleeves still come out angled, send: "Redo it: both sleeves hang straight down beside the body, parallel and symmetrical."
 
 ## 4. Order of photos in Shopify
 1. Your own real photo
