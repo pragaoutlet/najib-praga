@@ -10,7 +10,7 @@
 1. Open a **new chat inside the Project**.
 2. **Image 1, model full-body:** attach the product photo + the man's photo, send **Prompt B** with one pose line.
 3. **Image 2, model close-up:** same chat. Attach the **product photo + the man's photo again**, send **Prompt D** with one framing line. Do NOT attach the first AI picture.
-4. **Images 3 and 4, mannequin front and back:** attach the front photo + the back photo of the product, send **Prompt C**.
+4. **Images 3 and 4, ghost mannequin front and back:** attach the front photo + the back photo of the product, send **Prompt C**.
 5. Check every image (Section 5), then upload to Shopify.
 6. Next product: new chat.
 
@@ -39,9 +39,11 @@ MODEL PHOTOS
 - The whole product must stay clearly visible. Natural, relaxed, confident poses, not stiff.
 - I will tell you the pose for each image.
 
-MANNEQUIN PHOTOS
-- A plain light grey headless mannequin, the whole product visible, nothing else.
-- I will send a front photo and a back photo of the product. Make a FRONT image from the front photo and a BACK image from the back photo. Keep the same mannequin, size and light in both.
+GHOST MANNEQUIN PHOTOS (invisible mannequin)
+- Make a "ghost mannequin" photo: the garment looks worn on an invisible body, full and 3D, floating in the frame.
+- NO visible mannequin: no plastic or fabric mannequin, no neck block, no stand, no pole, no base, no hanger, no hands, no head, no body. Nothing but the garment.
+- Show the inside of the neck/collar (the back inside of the garment) as in a real ghost mannequin photo, with a natural shape and natural folds. The sleeves and body keep a natural worn shape, not flat.
+- I will send a front photo and a back photo of the product. Make a FRONT image from the front photo and a BACK image from the back photo. Keep the same size, shape and light in both.
 ```
 
 ## 3. Prompts (attach the photos each time)
@@ -77,18 +79,19 @@ Framing lines:
 - Gilets: Chest-up crop, the stand collar, the zip and the chest badge sharp.
 - If the face drifts: Neck-down crop, face not shown.
 
-### PROMPT C: mannequin front + back (send the front photo and the back photo together)
+### PROMPT C: ghost mannequin front + back (send the front photo and the back photo together)
 ```
-Front photo and back photo of the product attached. Make 2 images, following the project rules: 1) FRONT view on the plain headless mannequin, 2) BACK view on the same mannequin. 1200x1200, background #DCDCDC. Do not change any logo or detail. Show the back exactly as in the back photo.
+Front photo and back photo of the product attached. Make 2 GHOST MANNEQUIN images (invisible mannequin), following the project rules: 1) FRONT view, 2) BACK view. The garment must look worn on an invisible body, full and 3D, with a natural shape. NO visible mannequin of any kind: no plastic mannequin, no neck block, no stand, no hanger, no head, no hands. Only the garment, floating, with the inside of the collar visible. 1200x1200, background #DCDCDC. Do not change any logo or detail. Show the back exactly as in the back photo. Same size, shape and light in both images.
 ```
 (This one allows 2 images, because front and back are two photos.)
+If a plastic mannequin still appears, send this one line: "Remove the mannequin completely. Ghost mannequin only: the garment alone, floating."
 
 ## 4. Order of photos in Shopify
 1. Your own real photo
 2. Model full-body
 3. Model close-up
-4. Mannequin front
-5. Mannequin back
+4. Ghost mannequin front
+5. Ghost mannequin back
 
 Photo size in Shopify: 1200x1200, background #DCDCDC.
 
@@ -100,6 +103,7 @@ Photo size in Shopify: 1200x1200, background #DCDCDC.
 - [ ] The man's face looks like the real man
 - [ ] Hands and fingers look natural
 - [ ] No extra text, watermark or logo added
+- [ ] Ghost mannequin: no visible mannequin, neck block, stand or hanger
 - [ ] Background is plain #DCDCDC and the size is square
 
 If one detail is wrong and keeps coming back, don't use that image. Write one short line about what is wrong, for example: "the chest logo is wrong, copy it from the photo". Don't regenerate blindly, because every try uses your limit.
