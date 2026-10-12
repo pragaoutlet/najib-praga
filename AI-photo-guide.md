@@ -3,18 +3,18 @@
 ## 0. Setup (once)
 1. In ChatGPT make a **Project** (name it "Praga photos").
 2. Paste **Section A** into the Project's Instructions box.
-3. Use the **normal, fast image mode** (not "thinking"). Only switch to thinking if one product keeps coming out wrong.
+3. Use a **normal chat inside the Project** (NOT the "Work" / agent mode) on the **Instant** model. The Work mode plans in steps and takes 5 to 10 minutes per image. A normal Instant chat is very fast. Do not use "thinking" unless one product keeps coming out wrong.
 4. The man in the photos must have agreed (in writing) to have his photos used in the shop's ads and website.
 
 ## 1. For each product (follow in order)
 1. Open a **new chat inside the Project**.
 2. **Image 1, model full-body:** attach the product photo + the man's photo, send **Prompt B** with one pose line.
 3. **Image 2, model close-up:** same chat. Attach the **product photo + the man's photo again**, send **Prompt D** with one framing line. Do NOT attach the first AI picture.
-4. **Images 3 and 4, ghost mannequin front and back:** attach the front photo + the back photo of the product, send **Prompt C**.
+4. **Images 3 and 4, ghost mannequin front, then back:** send **Prompt C1** with the front photo. When it is done, in the same chat send **Prompt C2** with the back photo. Two short requests, one image each.
 5. Check every image (Section 5), then upload to Shopify.
 6. Next product: new chat.
 
-Per product = 4 AI images. Limit is about 40-50 images per 3 hours (unofficial, check the banner in the app), so about 10 products per 3 hours. Work in batches. Make 1 image per request, and only regenerate when something is wrong.
+Per product = 4 AI images, each one a short, separate request. Limit is about 40-50 images per 3 hours (unofficial, check the banner in the app), so about 10 products per 3 hours. Work in batches. Make 1 image per request, and only regenerate when something is wrong.
 
 Exception: if the close-up looks like a different man or different outfit, add the first AI picture and write: "Use the first attached picture only for the man's face and outfit. Copy the product from the product photo." Then check the logo carefully.
 
@@ -80,11 +80,15 @@ Framing lines:
 - Gilets: Chest-up crop, the stand collar, the zip and the chest badge sharp.
 - If the face drifts: Neck-down crop, face not shown.
 
-### PROMPT C: ghost mannequin front + back (send the front photo and the back photo together)
+### PROMPT C1: ghost mannequin FRONT (attach the front photo)
 ```
-Front photo and back photo of the product attached. Make 2 GHOST MANNEQUIN images (invisible mannequin), following the project rules: 1) FRONT view, 2) BACK view. The garment must look worn on an invisible body, full and 3D, with a natural shape. NO visible mannequin of any kind: no plastic mannequin, no neck block, no stand, no hanger, no head, no hands. Only the garment, floating, with the inside of the collar visible. 1200x1200, background #DCDCDC, the garment filling about 75% of the frame, centered. Do not change any logo or detail. Show the back exactly as in the back photo. Same size, shape and light in both images.
+Product front photo attached. Ghost mannequin FRONT view (invisible mannequin), following the project rules. The garment looks worn on an invisible body, full and 3D, floating, with the inside of the collar visible. NO visible mannequin, neck block, stand, hanger, head or hands. 1200x1200, background #DCDCDC, the garment filling about 75% of the frame, centered. Do not change any logo or detail. One image only.
 ```
-(This one allows 2 images, because front and back are two photos.)
+
+### PROMPT C2: ghost mannequin BACK (same chat, attach the back photo)
+```
+Back photo attached. Ghost mannequin BACK view of the same garment, following the project rules. Same size, shape, framing (75% of the frame, centered) and light as the front image. NO visible mannequin of any kind. 1200x1200, background #DCDCDC. Show the back exactly as in the back photo. Do not change any logo or detail. One image only.
+```
 If a plastic mannequin still appears, send this one line: "Remove the mannequin completely. Ghost mannequin only: the garment alone, floating."
 
 ## 4. Order of photos in Shopify
