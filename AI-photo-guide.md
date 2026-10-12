@@ -28,6 +28,7 @@ RULES FOR EVERY IMAGE
 - Never add, remove, move or redraw any logo, text or detail. If unsure about a detail, keep it as in the photo.
 - Keep the real color of the product. Do not make it brighter or change its shade.
 - Size: square, 1200x1200 pixels.
+- FRAMING: the garment fills about 75% of the frame (width for tops and jackets, height for pants), centered, with equal empty space on all sides. Do not leave the garment small in a big empty canvas, and do not crop any part of it.
 - Background: plain flat light grey, color #DCDCDC, no texture, no props, no text.
 - Soft, even studio light. Sharp, natural, realistic photo, like a real camera photo. Natural skin, no smoothing, no plastic or CGI look.
 - No watermark, no captions, no extra people, no brand names added.
@@ -81,7 +82,7 @@ Framing lines:
 
 ### PROMPT C: ghost mannequin front + back (send the front photo and the back photo together)
 ```
-Front photo and back photo of the product attached. Make 2 GHOST MANNEQUIN images (invisible mannequin), following the project rules: 1) FRONT view, 2) BACK view. The garment must look worn on an invisible body, full and 3D, with a natural shape. NO visible mannequin of any kind: no plastic mannequin, no neck block, no stand, no hanger, no head, no hands. Only the garment, floating, with the inside of the collar visible. 1200x1200, background #DCDCDC. Do not change any logo or detail. Show the back exactly as in the back photo. Same size, shape and light in both images.
+Front photo and back photo of the product attached. Make 2 GHOST MANNEQUIN images (invisible mannequin), following the project rules: 1) FRONT view, 2) BACK view. The garment must look worn on an invisible body, full and 3D, with a natural shape. NO visible mannequin of any kind: no plastic mannequin, no neck block, no stand, no hanger, no head, no hands. Only the garment, floating, with the inside of the collar visible. 1200x1200, background #DCDCDC, the garment filling about 75% of the frame, centered. Do not change any logo or detail. Show the back exactly as in the back photo. Same size, shape and light in both images.
 ```
 (This one allows 2 images, because front and back are two photos.)
 If a plastic mannequin still appears, send this one line: "Remove the mannequin completely. Ghost mannequin only: the garment alone, floating."
@@ -105,5 +106,9 @@ Photo size in Shopify: 1200x1200, background #DCDCDC.
 - [ ] No extra text, watermark or logo added
 - [ ] Ghost mannequin: no visible mannequin, neck block, stand or hanger
 - [ ] Background is plain #DCDCDC and the size is square
+- [ ] The garment fills about 75% of the frame, centered, nothing cut off
 
 If one detail is wrong and keeps coming back, don't use that image. Write one short line about what is wrong, for example: "the chest logo is wrong, copy it from the photo". Don't regenerate blindly, because every try uses your limit.
+
+## 6. If a photo already made is too small in the frame
+Don't regenerate it (it uses your limit). The background is flat #DCDCDC, so just crop it: crop evenly on all sides until the garment fills about 75% of the square, then export at 1200x1200 (Canva, Photoshop, or the free tool in your phone's photo editor). Use the same crop size for the front and the back of the same product so they match.
