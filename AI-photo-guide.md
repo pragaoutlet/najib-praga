@@ -28,7 +28,7 @@ RULES FOR EVERY IMAGE
 - Never add, remove, move or redraw any logo, text or detail. If unsure about a detail, keep it as in the photo.
 - Keep the real color of the product. Do not make it brighter or change its shade.
 - Size: square, 1200x1200 pixels.
-- FRAMING: the garment fills about 75% of the frame (width for tops and jackets, height for pants), centered, with equal empty space on all sides. Do not leave the garment small in a big empty canvas, and do not crop any part of it.
+- FRAMING: wide shot, camera pulled back. The garment must be SMALLER in the picture, with a clear empty grey margin all around it: at least 12% of the picture width of empty space on the left and right, and at least 12% of the picture height on the top and bottom. The garment takes about three quarters of the picture width. It must never touch or come close to the edges. Centered.
 - Background: plain flat light grey, color #DCDCDC, no texture, no props, no text.
 - Soft, even studio light. Sharp, natural, realistic photo, like a real camera photo. Natural skin, no smoothing, no plastic or CGI look.
 - No watermark, no captions, no extra people, no brand names added.
@@ -82,12 +82,12 @@ Framing lines:
 
 ### PROMPT C1: ghost mannequin FRONT (attach the front photo)
 ```
-Product front photo attached. Ghost mannequin FRONT view (invisible mannequin), following the project rules. The garment looks worn on an invisible body, full and 3D, floating, with the inside of the collar visible. NO visible mannequin, neck block, stand, hanger, head or hands. 1200x1200, background #DCDCDC, the garment filling about 75% of the frame, centered. Do not change any logo or detail. One image only.
+Product front photo attached. Ghost mannequin FRONT view (invisible mannequin), following the project rules. The garment looks worn on an invisible body, full and 3D, floating, with the inside of the collar visible. NO visible mannequin, neck block, stand, hanger, head or hands. 1200x1200, background #DCDCDC, wide shot with a clear empty grey margin around the garment (at least 12% on every side), centered, never close to the edges. Do not change any logo or detail. One image only.
 ```
 
 ### PROMPT C2: ghost mannequin BACK (same chat, attach the back photo)
 ```
-Back photo attached. Ghost mannequin BACK view of the same garment, following the project rules. Same size, shape, framing (75% of the frame, centered) and light as the front image. NO visible mannequin of any kind. 1200x1200, background #DCDCDC. Show the back exactly as in the back photo. Do not change any logo or detail. One image only.
+Back photo attached. Ghost mannequin BACK view of the same garment, following the project rules. Same size, shape, framing (wide shot, clear grey margin on every side, centered) and light as the front image. NO visible mannequin of any kind. 1200x1200, background #DCDCDC. Show the back exactly as in the back photo. Do not change any logo or detail. One image only.
 ```
 If a plastic mannequin still appears, send this one line: "Remove the mannequin completely. Ghost mannequin only: the garment alone, floating."
 
@@ -110,9 +110,16 @@ Photo size in Shopify: 1200x1200, background #DCDCDC.
 - [ ] No extra text, watermark or logo added
 - [ ] Ghost mannequin: no visible mannequin, neck block, stand or hanger
 - [ ] Background is plain #DCDCDC and the size is square
-- [ ] The garment fills about 75% of the frame, centered, nothing cut off
+- [ ] The garment is about 75% of the picture width, with a clear grey margin on every side, centered
 
 If one detail is wrong and keeps coming back, don't use that image. Write one short line about what is wrong, for example: "the chest logo is wrong, copy it from the photo". Don't regenerate blindly, because every try uses your limit.
 
-## 6. If a photo already made is too small in the frame
-Don't regenerate it (it uses your limit). The background is flat #DCDCDC, so just crop it: crop evenly on all sides until the garment fills about 75% of the square, then export at 1200x1200 (Canva, Photoshop, or the free tool in your phone's photo editor). Use the same crop size for the front and the back of the same product so they match.
+## 6. If a photo already made has the garment too big in the picture
+Don't regenerate it (it uses your limit). Because the background is flat #DCDCDC, make the garment smaller yourself:
+1. Make a new square canvas, 1200x1200, filled with color #DCDCDC.
+2. Put the picture on it, scale it down to about 80% of its size (so the garment ends up about 75% of the width), and center it.
+3. Export at 1200x1200. Canva, Photoshop, or any photo editor can do this.
+4. Use the SAME scale for the front and the back of the same product so they match.
+If the edges of the original picture show (a slightly different grey), set the original's edge to blend, or ask ChatGPT once: "Zoom out, add more empty #DCDCDC space around the garment, same garment."
+
+If ChatGPT keeps making the garment too big, add this one line to your message: "Zoom out. The garment must be about 3/4 of the picture width with empty grey space on all four sides."
