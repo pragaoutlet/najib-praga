@@ -47,7 +47,10 @@ challenge: everything bottlenecks on his own hours.
   unless Najib gives it; describe only visible details.
 - **Sales channels:** when creating any product, turn on all 3 channels:
   Online Store (121982779646), Point of Sale (121982845182), Facebook &
-  Instagram (123420311806) via `publishablePublish`.
+  Instagram (123420311806) via `publishablePublish`. NOTE: the API accepts
+  this on DRAFT products with no error but it does not stick (verified:
+  resourcePublicationsV2 stays empty). So re-apply it when a product is made
+  Active, and tell Najib the toggles can't be pre-set on drafts via the API.
 - Never put exchange/return wording in product descriptions unless asked.
 - Women's sets: product type "Set" + tag Women goes into the automatic
   "Women's Sets" collection (id 513146716414).
