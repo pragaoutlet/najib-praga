@@ -45,6 +45,10 @@ challenge: everything bottlenecks on his own hours.
   linked Shopify metaobject lists; ask before creating a new color.
 - Research before writing titles/descriptions; don't state fabric composition
   unless Najib gives it; describe only visible details.
+- **Sales channels:** when creating any product, turn on all 3 channels:
+  Online Store (121982779646), Point of Sale (121982845182), Facebook &
+  Instagram (123420311806) via `publishablePublish`.
+- Never put exchange/return wording in product descriptions unless asked.
 - Women's sets: product type "Set" + tag Women goes into the automatic
   "Women's Sets" collection (id 513146716414).
 
