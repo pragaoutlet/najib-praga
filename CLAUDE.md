@@ -54,6 +54,9 @@ challenge: everything bottlenecks on his own hours.
   this on DRAFT products with no error but it does not stick (verified:
   resourcePublicationsV2 stays empty). So re-apply it when a product is made
   Active, and tell Najib the toggles can't be pre-set on drafts via the API.
+- **Shorter descriptions.** Keep each description short: one brief paragraph
+  (2-3 sentences) plus at most 3-4 short bullets, or just one paragraph.
+  Najib asked for this ("a little bit smaller") after the long ones.
 - Never put exchange/return wording in product descriptions unless asked.
 - Women's sets: product type "Set" + tag Women goes into the automatic
   "Women's Sets" collection (id 513146716414).
