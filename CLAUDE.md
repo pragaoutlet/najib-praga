@@ -43,7 +43,10 @@ challenge: everything bottlenecks on his own hours.
   Sweater With Embroidered Heart"). Put extra detail in the description.
 - Create every product with `taxable:false`. Take colors and sizes from the
   linked Shopify metaobject lists; ask before creating a new color.
-- Research before writing titles/descriptions; don't state fabric composition
+- **Research every product before naming/describing it** (Najib re-stated
+  this: "look in all the Internet"): run real web searches for each one,
+  plus check his own store's titles for style. Don't skip it on "simple"
+  items like pants or sweaters. Don't state fabric composition
   unless Najib gives it; describe only visible details.
 - **Sales channels:** when creating any product, turn on all 3 channels:
   Online Store (121982779646), Point of Sale (121982845182), Facebook &
