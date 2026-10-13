@@ -104,6 +104,18 @@ Use the example only as a private reference. Never upload it to the shop.
 
 If the sleeves still come out angled, send: "Redo it: both sleeves hang straight down beside the body, parallel and symmetrical."
 
+## 3b. Small details the AI gets wrong (zip pulls, tags, logos)
+The AI often changes tiny parts, for example the brown leather zip pull with the "Polo" logo on a Ralph Lauren quarter-zip. Do this:
+1. **Attach a close-up photo of the detail** as an extra picture (zip pull, collar tag, logo) in the same message, together with the product photo and the man's photo.
+2. **Add a detail-lock line** to Prompt B, D, C1 or C2:
+   "DETAIL LOCK: the zip pull must be exactly as in the close-up photo: [describe it]. Copy it exactly, do not simplify it, do not change its color or shape."
+3. **If it is still wrong, do NOT regenerate the whole picture.** Send one short fix in the same chat: "Keep everything the same. Change ONLY the zip pull: [describe it], exactly as in the close-up photo."
+4. **If it still fails after 2 tries**, use the image anyway and fix the detail by hand (Canva or Photoshop: paste the zip pull from your real photo), or use your own real photo for that angle.
+
+Example detail-lock lines:
+- Polo Ralph Lauren quarter-zip: "DETAIL LOCK: the zip has a black zip slider with a brown leather tab shaped like a long diamond, with the word 'Polo' and a tiny pony on it. The chest pony is embroidered in tan, small, on the left chest. The inside back of the collar is camel colored with the blue POLO RALPH LAUREN label."
+- Any garment: "DETAIL LOCK: copy the zip pull, buttons, labels and logos exactly from the close-up photos. If you are not sure about a detail, leave it as in the photo."
+
 ## 4. Order of photos in Shopify
 1. Your own real photo
 2. Model full-body
