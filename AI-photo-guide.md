@@ -32,6 +32,7 @@ RULES FOR EVERY IMAGE
 - Background: plain flat light grey, color #DCDCDC, no texture, no props, no text.
 - Soft, even studio light. Sharp, natural, realistic photo, like a real camera photo. Natural skin, no smoothing, no plastic or CGI look.
 - No watermark, no captions, no extra people, no brand names added.
+- COLLAR TAG: only when I say "no brand tag", show the collar with NO label, tag or brand name visible (plain inside of the collar). Remove any brand tag from the photo. Do not invent a replacement label.
 - Make only ONE image per request, unless I ask for more.
 
 MODEL PHOTOS
