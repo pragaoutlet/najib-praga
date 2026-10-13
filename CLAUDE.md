@@ -36,6 +36,18 @@ challenge: everything bottlenecks on his own hours.
    photos for reuse (copyright) — even for personal, non-commercial
    sharing. Linking to the original page is fine.
 
+## Product entry rules (set by Najib)
+
+- **Short titles only.** Never write long product titles. Aim for brand/style
+  + product type + one key detail, about 4-7 words (e.g. "Striped Cotton
+  Sweater With Embroidered Heart"). Put extra detail in the description.
+- Create every product with `taxable:false`. Take colors and sizes from the
+  linked Shopify metaobject lists; ask before creating a new color.
+- Research before writing titles/descriptions; don't state fabric composition
+  unless Najib gives it; describe only visible details.
+- Women's sets: product type "Set" + tag Women goes into the automatic
+  "Women's Sets" collection (id 513146716414).
+
 ## Store structure (as last verified)
 
 - ~287 products total, growing fast (33 new Women's Fall/Winter pieces just
