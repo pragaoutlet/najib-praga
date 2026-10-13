@@ -112,6 +112,9 @@ The AI often changes tiny parts, for example the brown leather zip pull with the
 3. **If it is still wrong, do NOT regenerate the whole picture.** Send one short fix in the same chat: "Keep everything the same. Change ONLY the zip pull: [describe it], exactly as in the close-up photo."
 4. **If it still fails after 2 tries**, use the image anyway and fix the detail by hand (Canva or Photoshop: paste the zip pull from your real photo), or use your own real photo for that angle.
 
+**Always give the SIZE of a small detail.** The AI makes small details (zip tabs, labels, badges) too big. Add the real size to the detail-lock line, for example: "The leather zip tab is small and thin, about 2.5 cm long, roughly the width of two fingers, and less than 1/20 of the sweater's width."
+If a detail comes out too big, in the ChatGPT image screen click **Markup**, circle the detail, and type: "Keep everything the same. Make ONLY this [detail] about half its current size." Do not regenerate the whole picture.
+
 Example detail-lock lines:
 - Polo Ralph Lauren quarter-zip: "DETAIL LOCK: the zip has a black zip slider with a brown leather tab shaped like a long diamond, with the word 'Polo' and a tiny pony on it. The chest pony is embroidered in tan, small, on the left chest. The inside back of the collar is camel colored with the blue POLO RALPH LAUREN label."
 - Any garment: "DETAIL LOCK: copy the zip pull, buttons, labels and logos exactly from the close-up photos. If you are not sure about a detail, leave it as in the photo."
