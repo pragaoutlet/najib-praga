@@ -21,8 +21,9 @@ challenge: everything bottlenecks on his own hours.
    let Najib review and publish it himself. This has been stated multiple
    times and is non-negotiable.
 2. **Don't touch store-wide collections without confirming first** — e.g.
-   "New Arrivals" is an automated collection matching literally every
-   priced product storewide; changing its rule affects the whole catalog.
+   "New Arrivals" is an automated collection (rule: tag "Fall Winter
+   2026-2027" AND NOT tag "hide-new-arrivals"); changing its rule affects
+   what shows storewide.
 3. **Sale/compare-at pricing**: this store has had recurring bad data where
    `compareAtPrice` gets set to `$0.00` by mistake (shows a broken "was $0"
    strikethrough). This is always junk, safe to clear. A real
@@ -66,8 +67,10 @@ challenge: everything bottlenecks on his own hours.
 - ~287 products total, growing fast (33 new Women's Fall/Winter pieces just
   finished, ~$18-20k more inventory being bought next month).
 - Collections: **Women** (automated, tag=women), **Men** (automated,
-  tag≠Women), **New Arrivals** (automated, store-wide, ANY priced product —
-  do not scope-narrow without explicit confirmation), **Winter Collection**
+  tag≠Women), **New Arrivals** (automated, men + women: tag "Fall Winter
+  2026-2027", excluding "hide-new-arrivals"; sorted newest first. Add that
+  tag to every new product so it appears. The Men collection is also sorted
+  newest first, changed with Najib's OK on 2026-10-15), **Winter Collection**
   (manual, currently mixed men+women — no final decision made on whether to
   split), plus generic manual collections per category (Dresses, Jackets,
   Pants, Pullover Sweaters, Shirts) and 9 auto "Women's X" collections
