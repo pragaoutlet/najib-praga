@@ -70,7 +70,12 @@ challenge: everything bottlenecks on his own hours.
   tag≠Women), **New Arrivals** (automated, men + women: tag "Fall Winter
   2026-2027", excluding "hide-new-arrivals"; sorted newest first. Add that
   tag to every new product so it appears. The Men collection is also sorted
-  newest first, changed with Najib's OK on 2026-10-15), **Winter Collection**
+  newest first, changed with Najib's OK on 2026-10-15. **Men's Winter
+  Collection is MANUAL order** (set 2026-10-15, newest first, with "POLO
+  Ralph Lauren Jacket" pinned at visible position 32 = end of row 16 on
+  mobile). New men's products must be moved to the top by hand. The
+  Winter Collection, the homepage "Explore Now" target, is sorted newest
+  first), **Winter Collection**
   (manual, currently mixed men+women — no final decision made on whether to
   split), plus generic manual collections per category (Dresses, Jackets,
   Pants, Pullover Sweaters, Shirts) and 9 auto "Women's X" collections
