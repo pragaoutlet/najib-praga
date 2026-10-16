@@ -72,8 +72,8 @@ challenge: everything bottlenecks on his own hours.
   tag to every new product so it appears. The Men collection is also sorted
   newest first, changed with Najib's OK on 2026-10-15. **Men's Winter
   Collection is MANUAL order** (set 2026-10-15, newest first, with "POLO
-  Ralph Lauren Jacket" pinned at visible position 32 = end of row 16 on
-  mobile). New men's products must be moved to the top by hand. The
+  Ralph Lauren Jacket" pinned at visible position 24 = end of row 12 on
+  mobile; moved up from 32 on 2026-10-16 because Najib said 32 was too far down). New men's products must be moved to the top by hand. The
   Winter Collection, the homepage "Explore Now" target, is sorted newest
   first), **Winter Collection**
   (manual, currently mixed men+women — no final decision made on whether to
