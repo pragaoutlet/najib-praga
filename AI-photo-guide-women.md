@@ -69,19 +69,26 @@ Product photo and the woman's photo attached. Put this exact product on this exa
 POSE: [paste one pose line]
 ```
 
-Pose lines (use a different one for each product):
-- Standing straight, front view, arms relaxed.
-- One hand lightly on the hip, body slightly turned, looking at the camera.
-- Three-quarter angle, weight on one leg, hands relaxed, looking slightly off camera.
-- Walking one step toward the camera, arms natural, a slight natural movement.
-- Hands loosely in front, shoulders relaxed, soft look at the camera.
-- Side profile turned slightly back toward the camera, to show the shape and the length.
-- Waist-up crop, slight turn, one hand lightly touching the collar or sleeve.
+Pose lines. The label before each line says which category it fits best. Paste only the line after the label, and use a different one for each product:
 
-Tips:
-- **Dresses and skirts:** use a pose with the legs visible and the arms free, so the full length and the way it falls are clear.
-- **Open cardigans and jackets:** use a pose with the arms away from the front so the closure and the front are visible.
-- **Pants and jeans:** full-body, standing straight or one step walking, so the full leg line and hem are visible.
+- **Best for: any product, the safe default (sweaters, cardigans, dresses, pants, jackets, sets).** Standing straight, front view, arms relaxed.
+- **Best for: sweaters and tops (hand on the hip shows the shape and the hem).** One hand lightly on the hip, body slightly turned, looking at the camera.
+- **Best for: dresses and skirts (shows the length and the side shape).** Three-quarter angle, weight on one leg, hands relaxed, looking slightly off camera.
+- **Best for: dresses, skirts and wide-leg pants (shows how the fabric falls and moves).** Walking one step toward the camera, arms natural, a slight natural movement.
+- **Best for: sets, matching tops and bottoms (shows both pieces clearly).** Hands loosely in front, shoulders relaxed, soft look at the camera.
+- **Best for: pants and jeans (shows the full leg line, the fit and the hem).** Standing straight, one leg slightly forward, arms away from the body, looking at the camera.
+- **Best for: dresses, long cardigans and jackets (shows the back shape and the length).** Side profile turned slightly back toward the camera, to show the shape and the length.
+- **Best for: open cardigans and jackets (arms away so the front and the closure show).** Standing straight, front view, both arms slightly away from the body, jacket or cardigan open and hanging naturally.
+- **Best for: sweaters, cardigans and tops when you want a closer, softer look.** Waist-up crop, slight turn, one hand lightly touching the collar or sleeve.
+
+Quick rule by category:
+- **Sweaters and knits:** hand on the hip, or waist-up crop.
+- **Cardigans:** both arms away from the body, or the waist-up crop.
+- **Jackets and coats:** both arms away from the body, or three-quarter angle.
+- **Dresses:** walking one step, or three-quarter angle, with the legs visible and the arms free.
+- **Skirts:** walking one step, or three-quarter angle.
+- **Pants and jeans:** one leg slightly forward, arms away from the body, full-body.
+- **Sets:** hands loosely in front, or standing straight front view.
 
 ### PROMPT D: model close-up (attach product photo + woman's photo again)
 ```
