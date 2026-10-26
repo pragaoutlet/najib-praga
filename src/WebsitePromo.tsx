@@ -118,8 +118,11 @@ const Browser: React.FC = () => {
           </div>
         </div>
         <div style={{height: 520 * u, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', background: '#0a0a0a'}}>
-          <Img src={staticFile('logo.png')} style={{width: 640 * u, opacity: loaded, transform: `scale(${0.8 + 0.2 * loaded})`}} />
-          <div style={{marginTop: -60 * u, background: RED, borderRadius: 12 * u, padding: `${14 * u}px ${44 * u}px`, fontSize: 38 * u, fontWeight: 800, opacity: loaded}}>SHOP NOW</div>
+          {/* The logo PNG has wide transparent padding; crop to the wordmark. */}
+          <div style={{height: 220 * u, overflow: 'hidden', opacity: loaded, transform: `scale(${0.8 + 0.2 * loaded})`}}>
+            <Img src={staticFile('logo.png')} style={{width: 640 * u, marginTop: -250 * u}} />
+          </div>
+          <div style={{marginTop: 40 * u, background: RED, borderRadius: 12 * u, padding: `${14 * u}px ${44 * u}px`, fontSize: 38 * u, fontWeight: 800, opacity: loaded}}>SHOP NOW</div>
         </div>
       </div>
     </Center>
