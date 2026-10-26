@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "remotion studio",
-    "build": "remotion render src/index.ts Praga out/praga.mp4"
+    "build": "remotion render src/index.ts Promo out/promo.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.539",
