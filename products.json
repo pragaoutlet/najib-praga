@@ -1,0 +1,10 @@
+[
+  {"brand": "Prada", "title": "T-Shirt", "price": 20, "sizes": ["S", "M", "L", "XL", "XXL"]},
+  {"brand": "Givenchy", "title": "T-Shirt", "price": 20, "sizes": ["M", "L", "XL", "XXL", "XXXL"]},
+  {"brand": "Tommy Hilfiger", "title": "Polo Shirt", "price": 35, "sizes": ["M", "L", "XL", "XXL", "XXXL"]},
+  {"brand": "BOSS", "title": "Cotton T-Shirt with Logo Patch", "price": 25, "sizes": ["M", "L", "XL", "XXL", "XXXL"]},
+  {"brand": "Dolce&Gabbana", "title": "T-Shirt", "price": 20, "sizes": ["S", "M", "L", "XL", "XXL"]},
+  {"brand": "Paul&Shark", "title": "T-Shirt", "price": 25, "sizes": ["M", "L", "XL", "XXL", "XXXL"]},
+  {"brand": "Moncler", "title": "T-Shirt", "price": 25, "sizes": ["S", "M", "L", "XL", "XXL"]},
+  {"brand": "Balenciaga", "title": "Crewneck T-Shirt", "price": 20, "sizes": ["S", "M", "L", "XL", "XXL"]}
+]
