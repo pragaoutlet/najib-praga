@@ -20,12 +20,11 @@ type Caption = {from: number; to: number; ar: string; en: string; place: 'top' |
 
 // Times in seconds, matched to what is on screen in the footage.
 const CAPTIONS: Caption[] = [
-  {from: 2.8, to: 5.0, ar: 'BOSS · 85$', en: 'Quilted Gilet', place: 'low'},
+  {from: 2.8, to: 5.0, ar: 'جيليه مبطّن ودافي', en: 'Quilted Gilet', place: 'low'},
   {from: 5.2, to: 9.4, ar: 'متوفّر بلونين: أسود و Taupe', en: 'Black & Taupe', place: 'low'},
-  {from: 9.6, to: 11.8, ar: 'خط BOSS المميّز', en: 'Signature BOSS stripe', place: 'low'},
+  {from: 9.6, to: 11.8, ar: 'خط مميّز عالصدر', en: 'Signature chest stripe', place: 'low'},
   {from: 12.0, to: 14.8, ar: 'ياقة عالية بخط ناعم', en: 'Stand collar with stripe trim', place: 'low'},
   {from: 15.0, to: 18.2, ar: 'تفاصيل نضيفة من جوّا', en: 'Clean details inside', place: 'low'},
-  {from: 18.4, to: 20.2, ar: 'مع التيكيت الأصلي ✔', en: 'Comes with the original tag', place: 'low'},
 ];
 
 const fadeWindow = (frame: number, from: number, to: number, fade = 10) =>
@@ -73,8 +72,8 @@ const EndCard: React.FC<{cta: GiletAdProps['cta']}> = ({cta}) => {
   return (
     <AbsoluteFill style={{background: `rgba(12,11,10,${0.55 * a})`, justifyContent: 'center', alignItems: 'center'}}>
       <div style={{textAlign: 'center', opacity: a, transform: `translateY(${(1 - a) * 24}px)`, marginTop: -120}}>
-        <div style={{fontFamily: EN, fontWeight: 300, fontSize: 34, letterSpacing: 12, color: 'rgba(246,241,234,0.8)'}}>BOSS QUILTED GILET</div>
-        <div style={{fontFamily: EN, fontWeight: 800, fontSize: 150, color: CREAM, lineHeight: 1.1}}>$85</div>
+        <div style={{fontFamily: EN, fontWeight: 300, fontSize: 34, letterSpacing: 12, color: 'rgba(246,241,234,0.8)'}}>QUILTED GILET</div>
+        <div dir="rtl" style={{fontFamily: AR, fontWeight: 800, fontSize: 110, color: CREAM, lineHeight: 1.3}}>كمية محدودة</div>
         <div dir="rtl" style={{fontFamily: AR, fontWeight: 700, fontSize: 52, color: CREAM}}>قياسات من M لـ XXXL</div>
       </div>
       <div style={{position: 'absolute', bottom: 470, left: 0, right: 0, display: 'flex', justifyContent: 'center', opacity: b, transform: `translateY(${(1 - b) * 24}px)`}}>
