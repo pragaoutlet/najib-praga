@@ -3,20 +3,23 @@ with soft drums, sub bass, pad and a little reverb. No samples, so it is royalty
 
 Total length mirrors siteFilmDuration in src/SiteFilm.tsx (884 frames at 30 fps).
 
-Usage: python3 scripts/make_soft_soundtrack.py  ->  public/audio/soft.wav
+Usage: python3 scripts/make_soft_soundtrack.py [frames] [out.wav]
+       defaults: 884 frames -> public/audio/soft.wav
 """
 import os
+import sys
 import wave
 
 import numpy as np
 
 SR = 44100
 FPS = 30
-TOTAL_FRAMES = 884
+TOTAL_FRAMES = int(sys.argv[1]) if len(sys.argv) > 1 else 884
+OUT = sys.argv[2] if len(sys.argv) > 2 else 'public/audio/soft.wav'
 BPM = 100
 BEAT = 60 / BPM
 DRUMS_IN = 4 * 2  # beats: drums enter after two bars of keys and pad
-OUTRO = 744 / FPS  # outro scene start (s): drums drop out, keys ring
+OUTRO = (744 if TOTAL_FRAMES == 884 else TOTAL_FRAMES - 120) / FPS  # drums drop out, keys ring for the last 4s
 
 rng = np.random.default_rng(3)
 N = int(TOTAL_FRAMES / FPS * SR) + 3 * SR
@@ -177,9 +180,9 @@ mix[-fout:] *= np.linspace(1, 0, fout) ** 1.5
 mix = mix / np.max(np.abs(mix)) * 0.9
 
 os.makedirs('public/audio', exist_ok=True)
-with wave.open('public/audio/soft.wav', 'wb') as w:
+with wave.open(OUT, 'wb') as w:
     w.setnchannels(2)
     w.setsampwidth(2)
     w.setframerate(SR)
     w.writeframes((np.stack([mix, mix], axis=1) * 32767).astype('<i2').tobytes())
-print(f'wrote public/audio/soft.wav ({end / SR:.2f}s)')
+print(f'wrote {OUT} ({end / SR:.2f}s)')
