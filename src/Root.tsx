@@ -4,6 +4,7 @@ import {Promo} from './Promo';
 import {ProductAd, productAdDefaults} from './ProductAd';
 import {WebsitePromo, websitePromoDuration} from './WebsitePromo';
 import {SiteReel, siteReelDuration} from './SiteReel';
+import {SiteFilm, siteFilmDuration} from './SiteFilm';
 
 export const Root: React.FC = () => (
   <>
@@ -13,5 +14,6 @@ export const Root: React.FC = () => (
     <Composition id="WebsitePromo" component={WebsitePromo} durationInFrames={websitePromoDuration} fps={30} width={1080} height={1920} />
     <Composition id="WebsitePromoWide" component={WebsitePromo} durationInFrames={websitePromoDuration} fps={30} width={1920} height={1080} />
     <Composition id="SiteReel" component={SiteReel} durationInFrames={siteReelDuration} fps={30} width={1080} height={1920} />
+    <Composition id="SiteFilm" component={SiteFilm} durationInFrames={siteFilmDuration} fps={30} width={1080} height={1920} />
   </>
 );
