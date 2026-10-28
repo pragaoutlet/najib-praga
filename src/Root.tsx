@@ -9,6 +9,7 @@ import {GiletAd, giletAdDuration} from './GiletAd';
 import {JacketAd, jacketAdDuration} from './JacketAd';
 import {JacketAdShort, jacketAdShortDuration} from './JacketAdShort';
 import {JacketOverlay, JacketShortOverlay} from './JacketOverlay';
+import {JacketSubs, jacketSubsDuration} from './JacketSubs';
 
 export const Root: React.FC = () => (
   <>
@@ -25,5 +26,6 @@ export const Root: React.FC = () => (
     <Composition id="JacketAdShort" component={JacketAdShort} durationInFrames={jacketAdShortDuration} fps={30} width={1080} height={1920} />
     <Composition id="JacketOverlay" component={JacketOverlay} durationInFrames={jacketAdDuration} fps={30} width={1080} height={1920} />
     <Composition id="JacketShortOverlay" component={JacketShortOverlay} durationInFrames={jacketAdShortDuration} fps={30} width={1080} height={1920} />
+    <Composition id="JacketSubs" component={JacketSubs} durationInFrames={jacketSubsDuration} fps={30} width={1080} height={1920} />
   </>
 );
