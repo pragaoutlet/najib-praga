@@ -24,6 +24,7 @@ const SUBS: [number, number, string][] = [
   [22.4, 23.6, 'نفس الشي'],
   [24.48, 26.75, 'هول أكتر لونين أصلاً مطلوبين'],
   [27.78, 29.9, 'Quality تبعيتها كتير حلوة'],
+  [30.85, 33.0, 'لحّق حالك وحكينا'],
 ];
 
 const Sub: React.FC<{from: number; to: number; text: string}> = ({from, to, text}) => {
@@ -53,7 +54,7 @@ const Sub: React.FC<{from: number; to: number; text: string}> = ({from, to, text
 // Small WhatsApp tag at the top for the last seconds (inside the Reels safe zone).
 const WhatsApp: React.FC = () => {
   const frame = useCurrentFrame();
-  const start = 27.4 * 30;
+  const start = 30.4 * 30;
   const p = interpolate(frame, [start, start + 12], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.quad)});
   if (p <= 0) return null;
   return (
