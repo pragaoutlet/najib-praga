@@ -15,7 +15,7 @@ const RED = '#E10600';
 const PANEL = 'rgba(12,11,10,0.72)';
 const ease = Easing.bezier(0.33, 0, 0.2, 1);
 
-type Caption = {from: number; to: number; ar: string; en: string; swatch?: string};
+export type Caption = {from: number; to: number; ar: string; en: string; swatch?: string};
 
 // Times in seconds, matched to what is on screen.
 const CAPTIONS: Caption[] = [
@@ -29,7 +29,7 @@ const CAPTIONS: Caption[] = [
 const fadeWindow = (frame: number, from: number, to: number, fade = 10) =>
   interpolate(frame, [from, from + fade, to - fade, to], [0, 1, 1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease});
 
-const Label: React.FC<{c: Caption}> = ({c}) => {
+export const Label: React.FC<{c: Caption}> = ({c}) => {
   const frame = useCurrentFrame();
   const p = fadeWindow(frame, c.from * 30, c.to * 30);
   if (p <= 0) return null;
@@ -46,7 +46,7 @@ const Label: React.FC<{c: Caption}> = ({c}) => {
   );
 };
 
-const Hook: React.FC = () => {
+export const Hook: React.FC = () => {
   const frame = useCurrentFrame();
   const p = fadeWindow(frame, 0, 3.2 * 30, 8);
   const line = interpolate(frame, [6, 30], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease});
@@ -65,9 +65,8 @@ const Hook: React.FC = () => {
   );
 };
 
-const EndCard: React.FC = () => {
+export const EndCard: React.FC<{start: number}> = ({start}) => {
   const frame = useCurrentFrame();
-  const start = 43.6 * 30;
   const a = interpolate(frame, [start, start + 14], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease});
   const b = interpolate(frame, [start + 10, start + 26], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: ease});
   if (a <= 0) return null;
@@ -104,6 +103,6 @@ export const JacketAd: React.FC = () => (
     {CAPTIONS.map((c) => (
       <Label key={c.from} c={c} />
     ))}
-    <EndCard />
+    <EndCard start={43.6 * 30} />
   </AbsoluteFill>
 );
