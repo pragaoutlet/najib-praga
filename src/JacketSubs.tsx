@@ -1,10 +1,10 @@
 import {loadFont} from '@remotion/fonts';
 import {AbsoluteFill, Easing, interpolate, staticFile, useCurrentFrame} from 'remotion';
-import {jacketAdShortDuration} from './JacketAdShort';
 
 // Simple subtitles of the speaker's words for the 30s jacket cut (overlay only, transparent).
 // Composited onto the untouched HDR footage by scripts/composite_hdr.py.
-// Times are on the short timeline; phrase starts come from silencedetect on the voice.
+// Times are on the cut timeline; phrase starts come from silencedetect on the voice.
+// Cut (composite_hdr.py segments): 0-17.4, 30.85-37.5, 40.9-46.65 (drops the 38.2-40.3s sentence).
 
 loadFont({family: 'Cairo', url: staticFile('fonts/cairo-arabic-800-normal.woff2'), weight: '800'});
 
@@ -22,9 +22,8 @@ const SUBS: [number, number, string][] = [
   [17.65, 19.2, 'Okay، هيدي الكحلية'],
   [19.55, 20.9, 'كمان كتير حلوة'],
   [22.4, 23.6, 'نفس الشي'],
-  [24.48, 26.75, 'هول أكتر لونين أصلاً مطلوبين'],
-  [27.78, 29.9, 'Quality تبعيتها كتير حلوة'],
-  [30.85, 33.0, 'لحّق حالك وحكينا'],
+  [24.38, 26.5, 'Quality تبعيتها كتير حلوة'],
+  [27.45, 29.6, 'لحّق حالك وحكينا'],
 ];
 
 const Sub: React.FC<{from: number; to: number; text: string}> = ({from, to, text}) => {
@@ -54,7 +53,7 @@ const Sub: React.FC<{from: number; to: number; text: string}> = ({from, to, text
 // Small WhatsApp tag at the top for the last seconds (inside the Reels safe zone).
 const WhatsApp: React.FC = () => {
   const frame = useCurrentFrame();
-  const start = 30.4 * 30;
+  const start = 27.0 * 30;
   const p = interpolate(frame, [start, start + 12], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.quad)});
   if (p <= 0) return null;
   return (
@@ -75,4 +74,4 @@ export const JacketSubs: React.FC = () => (
   </AbsoluteFill>
 );
 
-export const jacketSubsDuration = jacketAdShortDuration;
+export const jacketSubsDuration = 894; // 17.4 + 6.65 + 5.75 s
