@@ -6,6 +6,7 @@ import {WebsitePromo, websitePromoDuration} from './WebsitePromo';
 import {SiteReel, siteReelDuration} from './SiteReel';
 import {SiteFilm, siteFilmDuration} from './SiteFilm';
 import {GiletAd, giletAdDuration} from './GiletAd';
+import {JacketAd, jacketAdDuration} from './JacketAd';
 
 export const Root: React.FC = () => (
   <>
@@ -18,5 +19,6 @@ export const Root: React.FC = () => (
     <Composition id="SiteFilm" component={SiteFilm} durationInFrames={siteFilmDuration} fps={30} width={1080} height={1920} />
     <Composition id="GiletAdWhatsApp" component={GiletAd} defaultProps={{cta: 'whatsapp' as const}} durationInFrames={giletAdDuration} fps={30} width={1080} height={1920} />
     <Composition id="GiletAdWeb" component={GiletAd} defaultProps={{cta: 'web' as const}} durationInFrames={giletAdDuration} fps={30} width={1080} height={1920} />
+    <Composition id="JacketAd" component={JacketAd} durationInFrames={jacketAdDuration} fps={30} width={1080} height={1920} />
   </>
 );
