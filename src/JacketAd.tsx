@@ -18,7 +18,7 @@ const ease = Easing.bezier(0.33, 0, 0.2, 1);
 export type Caption = {from: number; to: number; ar: string; en: string; swatch?: string};
 
 // Times in seconds, matched to what is on screen.
-const CAPTIONS: Caption[] = [
+export const CAPTIONS: Caption[] = [
   {from: 3.4, to: 8.0, ar: 'اللون الأوّل: أسود', en: 'Colour 1 · Black', swatch: '#1b1b1d'},
   {from: 13.0, to: 17.0, ar: 'ياقة فرو دافية', en: 'Warm fur collar'},
   {from: 24.3, to: 27.3, ar: 'ومن ورا كمان 👌', en: 'Clean from the back too'},

@@ -3,15 +3,15 @@ import {Caption, EndCard, Hook, Label} from './JacketAd';
 
 // ~30s cut of JacketAd. Cuts only inside the speaker's pauses (found with ffmpeg silencedetect),
 // so no sentence is broken: 0–17.4s (black) + 30.85–44.0s (navy).
-const A = {from: 0, to: 17.4};
-const B = {from: 30.85, to: 44.0};
+export const A = {from: 0, to: 17.4};
+export const B = {from: 30.85, to: 44.0};
 const A_LEN = Math.round((A.to - A.from) * 30);
 const B_LEN = Math.round((B.to - B.from) * 30);
-const XFADE = 8;
+export const XFADE = 8;
 export const jacketAdShortDuration = A_LEN + B_LEN;
 
 // Times in seconds on the short timeline.
-const CAPTIONS: Caption[] = [
+export const CAPTIONS: Caption[] = [
   {from: 3.4, to: 8.0, ar: 'اللون الأوّل: أسود', en: 'Colour 1 · Black', swatch: '#1b1b1d'},
   {from: 13.0, to: 17.2, ar: 'ياقة فرو دافية', en: 'Warm fur collar'},
   {from: 17.8, to: 22.2, ar: 'اللون التاني: كحلي', en: 'Colour 2 · Navy', swatch: '#1f2c5a'},
