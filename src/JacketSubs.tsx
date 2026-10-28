@@ -23,7 +23,7 @@ const SUBS: [number, number, string][] = [
   [19.55, 20.9, 'كمان كتير حلوة'],
   [22.4, 23.6, 'نفس الشي'],
   [24.48, 26.75, 'هول أكتر لونين أصلاً مطلوبين'],
-  [27.78, 29.9, 'الـ quality تبعيتها كتير حلوة'],
+  [27.78, 29.9, 'Quality تبعيتها كتير حلوة'],
 ];
 
 const Sub: React.FC<{from: number; to: number; text: string}> = ({from, to, text}) => {
