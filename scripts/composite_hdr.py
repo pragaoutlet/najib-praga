@@ -8,14 +8,16 @@ Usage:
   python3 scripts/composite_hdr.py SOURCE OVERLAY.mov BED.wav OUT.mp4 [SEGMENTS] [--sdr]
 SEGMENTS: optional "start-end,start-end" in seconds, joined with an 8-frame crossfade
           (must match the cut used in the Remotion overlay composition).
---sdr:    only when an SDR copy is explicitly asked for. Tone-maps HLG to BT.709 (reference white
-          -> SDR white, highlights rolled off with mobius, no desaturation) so it looks like the
-          iPhone shows it, then overlays the text at full SDR white. H.264 High, CRF 12.
+--sdr:    only when an SDR copy is explicitly asked for. Tone-maps HLG to BT.709 (300 nits -> SDR white:
+          a touch brighter than the clip as shot, approved on the jacket video; 203 was too bright),
+          highlights rolled off with mobius, no desaturation, then overlays the text at full SDR
+          white. H.264 High, CRF 12.
 """
 import subprocess
 import sys
 
 FPS = 30
+SDR_WHITE = 300  # nits of HLG signal mapped to SDR white
 XFADE = 8 / FPS
 
 args = [a for a in sys.argv[1:] if a != '--sdr']
@@ -46,9 +48,10 @@ else:
 
 if sdr:
     parts += [
-        # HLG (203-nit reference white = 1.0) -> linear -> BT.709 primaries -> mobius roll-off -> BT.709.
-        f'[{v}]zscale=tin=arib-std-b67:min=bt2020nc:pin=bt2020:rin=tv:t=linear:npl=203,format=gbrpf32le,'
-        'zscale=p=bt709,tonemap=mobius:param=0.6:desat=0:peak=4.93,zscale=t=bt709:m=bt709:r=pc,format=gbrp[base]',
+        # HLG (SDR_WHITE nits = 1.0) -> linear -> BT.709 primaries -> mobius roll-off -> BT.709.
+        f'[{v}]zscale=tin=arib-std-b67:min=bt2020nc:pin=bt2020:rin=tv:t=linear:npl={SDR_WHITE},format=gbrpf32le,'
+        f'zscale=p=bt709,tonemap=mobius:param=0.6:desat=0:peak={1000 / SDR_WHITE:.3f},'
+        'zscale=t=bt709:m=bt709:r=pc,format=gbrp[base]',
         # Text is already SDR: overlay in RGB, then one conversion to BT.709 YUV.
         '[1:v]format=gbrap[ov]',
         '[base][ov]overlay=format=gbrp:shortest=1,zscale=m=bt709:t=bt709:p=bt709:r=tv,format=yuv420p[vout]',
