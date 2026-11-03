@@ -1,2 +1,5 @@
 node_modules
 out
+
+# Customer lists contain personal data; keep them out of git
+reports/customers_*
